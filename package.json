@@ -1,6 +1,6 @@
 {
 	"name": "daily-menu",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Scraper utility tool to fetch daily menus around the Yco office.",
 	"license": "MIT",
 	"repository": "wolfika/daily-menu",
@@ -40,7 +40,7 @@
 	"xo": {
 		"esnext": true,
 		"rules": {
-		"new-cap": "off"
+			"new-cap": "off"
 		}
 	}
 }
