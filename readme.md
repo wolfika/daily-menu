@@ -2,6 +2,7 @@
 
 > Scraper utility tool to fetch daily menus around the [Yco](https://y-collective.com/) office.
 
+![daily-menu screencast](/assets/screencast.gif)
 
 ## Install
 
