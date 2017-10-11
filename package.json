@@ -1,0 +1,46 @@
+{
+	"name": "daily-menu",
+	"version": "0.0.0",
+	"description": "Scraper utility tool to fetch daily menus around the Yco office.",
+	"license": "MIT",
+	"repository": "wolfika/daily-menu",
+	"author": {
+		"name": "Máté Farkas",
+		"email": "farkas.mate38@gmail.com",
+		"url": "wolfika.eu"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		""
+	],
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.2",
+		"got": "^7.1.0",
+		"he": "^1.1.1",
+		"require-all": "^2.2.0",
+		"striptags": "^3.1.0",
+		"tty-table": "^2.5.5"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"esnext": true,
+		"rules": {
+		"new-cap": "off"
+		}
+	}
+}
