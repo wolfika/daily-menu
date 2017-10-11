@@ -53,7 +53,7 @@ $ npm install --global daily-menu
 $ daily-menu
 ```
 
-Typing this command, display the current restaurant offers in a table.
+Typing this command will result in displaying the current restaurant offers in a table.
 
 ## List of supported restaurants
 
