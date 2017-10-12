@@ -69,6 +69,7 @@ This utility is currently capable of retrieving offers from these restaurants:
 
 * [István Pince Borozó & Étterem](https://www.facebook.com/istvanpince/)
 * [Fiáker Étterem](http://www.fiakeretterem.hu/)
+* [Mátyás Király Vendéglö](http://www.matyasvendeglo.hu/)
 
 
 ## License
