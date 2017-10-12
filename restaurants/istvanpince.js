@@ -12,7 +12,6 @@ module.exports = {
 			return e.children.length;
 		}).eq(0).find('.text_exposed_root').html();
 
-		console.log(dailyMenu);
 		return dailyMenu.split(new RegExp(separators.join('|'), 'g'))
 			.map(el => el.trim())
 			.map(el => striptags(el))
