@@ -4,6 +4,13 @@
 
 ![daily-menu screencast](/assets/screencast.gif)
 
+
+## Prerequisites
+ 
+* Node.js >=7
+* npm
+
+
 ## Install
 
 ```
