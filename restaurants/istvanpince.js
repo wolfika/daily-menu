@@ -7,9 +7,12 @@ module.exports = {
 	url: 'https://www.facebook.com/istvanpince/',
 	getMenu: body => {
 		const $ = cheerio.load(body);
-		const dailyMenu = $('.userContent').eq(0).find('p').eq(1).html();
+		const separators = ['<br>', '<p>'];
+		const dailyMenu = $('.userContent').filter((i, e) => {
+			return e.children.length;
+		}).eq(0).find('.text_exposed_root').html();
 
-		return dailyMenu.split('<br>')
+		return dailyMenu.split(new RegExp(separators.join('|'), 'g'))
 			.map(el => el.trim())
 			.map(el => striptags(el))
 			.map(el => el.replace(/\.\.\./g, ''))

@@ -1,6 +1,6 @@
 {
 	"name": "daily-menu",
-	"version": "0.0.3",
+	"version": "0.2.0",
 	"description": "Scraper utility tool to fetch daily menus around the Yco office.",
 	"license": "MIT",
 	"repository": "wolfika/daily-menu",
@@ -11,7 +11,7 @@
 	},
 	"bin": "cli.js",
 	"engines": {
-		"node": ">=6"
+		"node": ">=7"
 	},
 	"scripts": {
 		"test": "xo && ava"
