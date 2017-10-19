@@ -20,5 +20,5 @@ module.exports = {
 			.map(el => striptags(el))
 			.map(el => el.replace(/\.\.\./g, ''))
 			.map(el => he.decode(el));
-		}
+	}
 };
