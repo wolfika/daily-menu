@@ -13,7 +13,7 @@ module.exports = {
 		}).eq(0).find('.text_exposed_root').html();
 
 		return dailyMenu.split(new RegExp(separators.join('|'), 'g'))
-			.filter(function(text) {
+			.filter(text => {
 				return text.startsWith(' ');
 			})
 			.map(el => el.trim())
