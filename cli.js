@@ -3,8 +3,8 @@ const Table = require('tty-table');
 const cliSpinners = require('cli-spinners');
 const ora = require('ora');
 const dailyMenu = require('.');
-const spinner = ora('Napi menük letöltése');
 
+const spinner = ora('Napi menük letöltése');
 spinner.spinner = cliSpinners.bouncingBar;
 spinner.color = 'green';
 spinner.start();
