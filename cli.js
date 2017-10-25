@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 const Table = require('tty-table');
+const cliSpinners = require('cli-spinners');
+const ora = require('ora');
 const dailyMenu = require('.');
+const spinner = ora('Napi menük letöltése');
+
+spinner.spinner = cliSpinners.bouncingBar;
+spinner.color = 'green';
+spinner.start();
 
 dailyMenu()
 	.then(results => {
@@ -33,4 +40,7 @@ dailyMenu()
 	})
 	.catch(err => {
 		console.error(err);
+	})
+	.then(() => {
+		spinner.stop();
 	});
