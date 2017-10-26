@@ -36,11 +36,11 @@ dailyMenu()
 			table.push([restaurant.name, restaurant.items.join('\n')]);
 		});
 
+		spinner.succeed('Jóétvágyat!');
+
 		console.log(table.render());
 	})
 	.catch(err => {
+		spinner.fail('Valami hiba történt :(');
 		console.error(err);
-	})
-	.then(() => {
-		spinner.succeed('Jóétvágyat!');
 	});
