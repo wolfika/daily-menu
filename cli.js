@@ -42,5 +42,5 @@ dailyMenu()
 		console.error(err);
 	})
 	.then(() => {
-		spinner.stop();
+		spinner.succeed('Jóétvágyat!');
 	});
