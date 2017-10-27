@@ -10,7 +10,7 @@ module.exports = {
 		const separators = ['<br>', '<p>', '</span>'];
 		const dailyMenu = $('.userContent').filter((i, e) => {
 			return e.children.length;
-		}).eq(0).find('.text_exposed_root').html();
+		}).eq(0).html();
 
 		return dailyMenu.split(new RegExp(separators.join('|'), 'g'))
 			.filter(text => {
