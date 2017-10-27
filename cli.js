@@ -36,7 +36,7 @@ dailyMenu()
 			table.push([restaurant.name, Array.isArray(restaurant.items) ? restaurant.items.join('\n') : restaurant.items]);
 		});
 
-		spinner.succeed('Jóétvágyat!');
+		spinner.succeed('Jó étvágyat!');
 
 		console.log(table.render());
 	})
