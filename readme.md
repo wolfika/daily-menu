@@ -6,7 +6,7 @@
 
 
 ## Prerequisites
- 
+
 * Node.js >=7
 * npm
 
@@ -25,7 +25,7 @@ const dailyMenu = require('daily-menu');
 
 dailyMenu()
 	.then(results => {
-	   console.log(results); //=> array of daily restaurant offers 
+	   console.log(results); //=> array (or string) of daily restaurant offers
 	});
 ```
 
@@ -50,6 +50,9 @@ Returns a `Promise`, which resolves to the scraped restaurant offers. The result
   }
 ]
 ```
+
+`items` is either a string or an array, depending on whether the restaurant provider was capable of parsing the HTML markup retrieved by the scraped.
+
 
 ## CLI
 
