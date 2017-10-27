@@ -33,7 +33,7 @@ dailyMenu()
 		]);
 
 		results.forEach(restaurant => {
-			table.push([restaurant.name, restaurant.items.join('\n')]);
+			table.push([restaurant.name, Array.isArray(restaurant.items) ? restaurant.items.join('\n') : restaurant.items]);
 		});
 
 		spinner.succeed('Jóétvágyat!');
