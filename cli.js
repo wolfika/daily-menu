@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 const Table = require('tty-table');
+const cliSpinners = require('cli-spinners');
+const ora = require('ora');
 const dailyMenu = require('.');
+
+const spinner = ora('Napi menük letöltése');
+spinner.spinner = cliSpinners.bouncingBar;
+spinner.color = 'green';
+spinner.start();
 
 dailyMenu()
 	.then(results => {
@@ -29,8 +36,11 @@ dailyMenu()
 			table.push([restaurant.name, restaurant.items.join('\n')]);
 		});
 
+		spinner.succeed('Jóétvágyat!');
+
 		console.log(table.render());
 	})
 	.catch(err => {
+		spinner.fail('Valami hiba történt :(');
 		console.error(err);
 	});
