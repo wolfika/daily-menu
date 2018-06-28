@@ -6,7 +6,7 @@
 	"repository": "wolfika/daily-menu",
 	"author": {
 		"name": "Máté Farkas",
-		"email": "farkas.mate38@gmail.com",
+		"email": "info@wolfika.eu",
 		"url": "wolfika.eu"
 	},
 	"bin": "cli.js",
