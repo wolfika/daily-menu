@@ -1,4 +1,9 @@
 node_modules
+.nyc_output
+coverage
+package-lock.json
+.env
+.idea
+.DS_Store
+.vscode
 yarn.lock
-.idea/
-package-lock.json*
