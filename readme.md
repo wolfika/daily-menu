@@ -4,6 +4,13 @@
 
 ![daily-menu screencast](/assets/screencast.gif)
 
+
+## Prerequisites
+
+* Node.js >=7
+* npm
+
+
 ## Install
 
 ```
@@ -18,7 +25,7 @@ const dailyMenu = require('daily-menu');
 
 dailyMenu()
 	.then(results => {
-	   console.log(results); //=> array of daily restaurant offers 
+	   console.log(results); //=> array (or string) of daily restaurant offers
 	});
 ```
 
@@ -44,6 +51,9 @@ Returns a `Promise`, which resolves to the scraped restaurant offers. The result
 ]
 ```
 
+`items` is either a string or an array, depending on whether the restaurant provider was capable of parsing the HTML markup retrieved by the scraped.
+
+
 ## CLI
 
 ```
@@ -62,7 +72,9 @@ This utility is currently capable of retrieving offers from these restaurants:
 
 * [István Pince Borozó & Étterem](https://www.facebook.com/istvanpince/)
 * [Fiáker Étterem](http://www.fiakeretterem.hu/)
-
+* [Mátyás Király Vendéglő](http://www.matyasvendeglo.hu/)
+* [Piazza del Grano](http://www.grano.hu/)
+* [Bohémia Sörkonyha](http://www.bohemiasorkonyha.hu/)
 
 ## License
 
