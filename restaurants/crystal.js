@@ -1,7 +1,5 @@
 const cheerio = require('cheerio');
 const he = require('he');
-const striptags = require('striptags');
-const iso88592 = require('iso-8859-2');
 
 module.exports = {
 	name: 'Crystal Restaurant',
@@ -16,7 +14,6 @@ module.exports = {
 			.split('<br>')
 			.map(el => el.trim())
 			.map(el => el.replace(/[\n\t]/g, ''))
-			.map(el => he.decode(el))
-			.map(el => iso88592.decode(el));
+			.map(el => he.decode(el));
 	}
 };

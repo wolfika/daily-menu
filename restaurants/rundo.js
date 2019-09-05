@@ -10,7 +10,8 @@ module.exports = {
 		const dailyMenu = $('#content2')
 			.text()
 			.replace(/[\n\t]/g,'')
-			.replace(/Heti ajánlat letöltése/g,'');
+			.replace(/Heti ajánlat letöltése/g,'')
+			.replace(/Tekintse meg étlapunkat!/g,'Egyelőre nincs elérhető menü!');
 
 		return dailyMenu
 			.split(/[AB]/)

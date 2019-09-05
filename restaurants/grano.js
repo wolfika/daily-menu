@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const he = require('he');
+const striptags = require('striptags');
 
 module.exports = {
 	name: 'Piazza del Grano',
@@ -18,6 +19,7 @@ module.exports = {
 
 		return dailyMenu
 			.split(', ')
+			.map(el => striptags(el))
 			.map(el => he.decode(el));
 	}
 };
