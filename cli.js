@@ -38,7 +38,7 @@ dailyMenu()
 
 		spinner.succeed('Jó étvágyat!');
 
-		console.log(table);
+		console.log(table.render());
 	})
 	.catch(err => {
 		spinner.fail('Valami hiba történt :(');
