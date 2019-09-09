@@ -6,8 +6,7 @@ module.exports = {
 	url: 'http://www.fiakeretterem.hu/category/heti-menu/',
 	getMenu: (body, date = new Date()) => {
 		const $ = cheerio.load(body);
-		let dailyMenu = $('.item')
-			.filter((index, element) => $(element).find(`.date:contains('${date.getDate()}')`).length)
+		let dailyMenu = $(`.item:nth-of-type(${date.getDay()})`)
 			.find('.text p')
 			.text();
 
