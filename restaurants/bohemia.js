@@ -11,16 +11,12 @@ module.exports = {
 			const separators = ['<br>', '<p>', '</div>'];
 			const dailyMenu = $('.userContent').filter((i, e) => {
 				return e.children.length;
-			}).eq(0).find('.text_exposed_root').html();
+			}).eq(0).html();
 
 			return dailyMenu
 				.split(new RegExp(separators.join('|'), 'g'))
-				.map(el => el.trim())
-				.filter(text => {
-					return text.startsWith('-');
-				})
-				.map(el => el.substring(2))
 				.map(el => striptags(el))
+				.map(el => el.trim())
 				.map(el => el.replace(/\.\.\./g, ''))
 				.map(el => he.decode(el));
 		} catch (e) {
