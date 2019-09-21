@@ -22,6 +22,9 @@ module.exports = {
 		// } catch (e) {
 		// 	return 'Hiba történt a begyűjtés során..';
 		// }
+
+		return 'nincs heti menü megosztva';
+
 		const hetimenu = [
 			'párolt zöldséges subji, jázmin rizzsel és paradicsom chatnival',
 			'lencsefőzelék, répafasirttal',
