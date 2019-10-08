@@ -4,7 +4,7 @@ const striptags = require('striptags');
 
 module.exports = {
 	name: 'Piazza del Grano',
-	url: 'http://www.grano.hu/',
+	url: 'http://etterem.grano.hu/',
 	getMenu: (body, date = new Date()) => {
 		const $ = cheerio.load(body);
 		const day = date.getDay();
