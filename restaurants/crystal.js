@@ -16,7 +16,7 @@ module.exports = {
 				.map(el => el.trim())
 				.map(el => el.replace(/[\n\t]/g, ''))
 				.map(el => he.decode(el));
-		} catch (e) {
+		} catch (err) {
 			return 'Még nincs kiírva a heti menü..';
 		}
 	}

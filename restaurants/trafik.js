@@ -4,8 +4,8 @@ const he = require('he');
 module.exports = {
 	name: 'Trafik',
 	url: 'https://kinotrafik.hu/ebed',
-	getMenu: (body, date = new Date()) => {
-		try{
+	getMenu: body => {
+		try {
 			const $ = cheerio.load(body);
 			let dailyMenu = $('.currentDay h5')
 				.html();
@@ -19,7 +19,7 @@ module.exports = {
 			dailyMenu.pop();
 
 			return dailyMenu;
-		} catch (e) {
+		} catch (err) {
 			return 'Hiba történt a begyűjtés során..';
 		}
 	}

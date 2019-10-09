@@ -19,7 +19,7 @@ module.exports = {
 				.map(el => striptags(el))
 				.map(el => el.replace(/[\n\t]/g, ''))
 				.map(el => he.decode(el));
-		} catch (e) {
+		} catch (err) {
 			return 'Jelenleg nem elérhető a menü...';
 		}
 	}

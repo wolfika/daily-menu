@@ -1,5 +1,4 @@
 const cheerio = require('cheerio');
-const he = require('he');
 
 module.exports = {
 	name: 'Fiáker Étterem',

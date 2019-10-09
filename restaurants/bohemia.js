@@ -24,7 +24,7 @@ module.exports = {
 				.map(el => el.trim())
 				.map(el => el.replace(/\.\.\./g, ''))
 				.map(el => he.decode(el));
-		} catch (e) {
+		} catch (err) {
 			return 'Menü csak szerdától péntekig van..';
 		}
 	}

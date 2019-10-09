@@ -19,7 +19,7 @@ module.exports = {
 			.map(el => el.trim())
 			.map(el => striptags(el))
 			.map(el => el.replace(/\.\.\./g, ''))
-			.map(el => el.replace(/^\-\s/g, ''))
+			.map(el => el.replace(/^-\s/g, ''))
 			.map(el => he.decode(el));
 	}
 };
