@@ -1,4 +1,4 @@
-# daily-menu [![Build Status](https://travis-ci.org/wolfika/daily-menu.svg?branch=master)](https://travis-ci.org/wolfika/daily-menu)
+# daily-menu [![Build Status](https://travis-ci.org/wolfika/daily-menu.svg?branch=1.0.0-dev)](https://travis-ci.org/wolfika/daily-menu)
 
 > Scraper utility tool to fetch daily menus.
 
