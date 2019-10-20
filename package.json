@@ -12,6 +12,13 @@
   "engines": {
     "node": ">=12"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  }
 }
