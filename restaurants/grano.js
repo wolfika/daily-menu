@@ -1,9 +1,10 @@
 const cheerio = require('cheerio');
 const he = require('he');
+const striptags = require('striptags');
 
 module.exports = {
 	name: 'Piazza del Grano',
-	url: 'http://www.grano.hu/',
+	url: 'http://etterem.grano.hu/',
 	getMenu: (body, date = new Date()) => {
 		const $ = cheerio.load(body);
 		const day = date.getDay();
@@ -18,6 +19,7 @@ module.exports = {
 
 		return dailyMenu
 			.split(', ')
+			.map(el => striptags(el))
 			.map(el => he.decode(el));
 	}
 };

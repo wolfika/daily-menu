@@ -70,11 +70,16 @@ Typing this command will result in displaying the current restaurant offers in a
 
 This utility is currently capable of retrieving offers from these restaurants:
 
-* [István Pince Borozó & Étterem](https://www.facebook.com/istvanpince/)
-* [Fiáker Étterem](http://www.fiakeretterem.hu/)
-* [Mátyás Király Vendéglő](http://www.matyasvendeglo.hu/)
-* [Piazza del Grano](http://www.grano.hu/)
 * [Bohémia Sörkonyha](http://www.bohemiasorkonyha.hu/)
+* [Crystal Restaurant](https://www.crystalrestaurant.hu/)
+* [Fiáker Étterem](http://www.fiakeretterem.hu/)
+* [Piazza del Grano](http://www.grano.hu/)
+* [István Pince Borozó & Étterem](https://www.facebook.com/istvanpince/)
+* [Mátyás Király Vendéglő](http://www.matyasvendeglo.hu/)
+* [Oliva Restaurant](https://www.facebook.com/olivaetterempecs/)
+* [Puspa Konyhája](http://www.puspakonyhaja.hu)
+* [Rundó Söröző - Étterem](http://rundo.hu)
+* [Trafik](https://kinotrafik.hu/ebed)
 
 ## License
 
