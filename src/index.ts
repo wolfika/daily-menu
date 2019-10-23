@@ -1,3 +1,5 @@
-export function greet(): string {
-  return 'Hello World!';
-}
+import { AppService } from './services/AppService';
+
+const dailyMenu = AppService.bootstrap();
+
+export default dailyMenu;
