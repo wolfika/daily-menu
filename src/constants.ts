@@ -1,1 +1,1 @@
-export const INSTALLED_PROVIDERS_KEY = 'providers';
+export const INSTALLED_PLUGINS_KEY = 'plugins';
