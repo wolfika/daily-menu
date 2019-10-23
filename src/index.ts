@@ -1,5 +1,1 @@
-import { AppService } from './services/AppService';
-
-const dailyMenu = AppService.bootstrap();
-
-export default dailyMenu;
+export { AppService as default } from './services/AppService';

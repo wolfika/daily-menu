@@ -12,7 +12,9 @@ export class AppService implements AppServiceAbstraction {
     this.pluginService = new PluginService(this.configService);
   }
 
-  static bootstrap(): AppService {
-    return new AppService();
+  static async bootstrap(): Promise<AppService> {
+    const appService = new AppService();
+    await appService.pluginService.loadAll();
+    return appService;
   }
 }

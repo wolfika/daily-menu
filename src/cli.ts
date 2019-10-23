@@ -1,3 +1,5 @@
-import dailyMenu from './index';
+import DailyMenu from './index';
 
-console.log(dailyMenu);
+DailyMenu.bootstrap().then((dailyMenu) => {
+  console.log(dailyMenu);
+});
