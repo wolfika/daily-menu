@@ -9,9 +9,15 @@ export class PluginService implements PluginServiceAbstraction {
     this.pluginPaths = this.configService.get(INSTALLED_PROVIDERS_KEY, []);
   }
 
-  install() {}
+  install(): void {
+    return;
+  }
 
-  uninstall() {}
+  uninstall(): void {
+    return;
+  }
 
-  loadAll() {}
+  loadAll(): void {
+    return;
+  }
 }
