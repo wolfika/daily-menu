@@ -18,6 +18,6 @@ describe('HttpService', () => {
   it('#get(url)', () => {
     const url = 'https://google.com';
     httpService.get(url);
-    expect(got).toBeCalledWith(url);
+    expect(got).toBeCalledWith(url, undefined);
   });
 });

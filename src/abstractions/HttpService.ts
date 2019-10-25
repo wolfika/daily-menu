@@ -1,5 +1,5 @@
-import { Response } from 'got';
+import { Response, GotOptions } from 'got';
 
 export abstract class HttpService {
-  get: (url: string) => Promise<Response<string>>;
+  get: (url: string, options?: GotOptions<string>) => Promise<Response<string>>;
 }

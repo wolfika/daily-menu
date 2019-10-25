@@ -1,8 +1,8 @@
-import got, { Response } from 'got';
+import got, { Response, GotOptions } from 'got';
 import { HttpService as HttpServiceAbstraction } from '../abstractions/HttpService';
 
 export class HttpService implements HttpServiceAbstraction {
-  async get(url: string): Promise<Response<string>> {
-    return await got(url);
+  async get(url: string, options?: GotOptions<string>): Promise<Response<string>> {
+    return await got(url, options);
   }
 }
