@@ -1,5 +1,5 @@
 {
-  "name": "daily-menu",
+  "name": "@daily-menu/core",
   "version": "1.0.0",
   "description": "Scraper utility tool to fetch daily menus.",
   "license": "MIT",
