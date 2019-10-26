@@ -1,8 +1,8 @@
 import { PluginService as PluginServiceAbstraction } from '../abstractions/PluginService';
 import { ConfigService } from './ConfigService';
 import { INSTALLED_PLUGINS_KEY } from '../constants';
-import { Plugin } from '../abstractions/Plugin';
-import { HttpService } from '../abstractions/HttpService';
+import { Plugin } from '../../common/src/abstractions/Plugin';
+import { HttpService } from '../../common/src/abstractions/HttpService';
 
 export class PluginService implements PluginServiceAbstraction {
   private pluginPaths: string[];

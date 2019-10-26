@@ -1,6 +1,6 @@
 import { AppService as AppServiceAbstraction } from '../abstractions/AppService';
 import { ConfigService } from '../services/ConfigService';
-import { HttpService as HttpServiceAbstraction } from '../abstractions/HttpService';
+import { HttpService as HttpServiceAbstraction } from '../../common/src/abstractions/HttpService';
 import { HttpService } from '../services/HttpService';
 import { PluginService as PluginServiceAbstraction } from '../abstractions/PluginService';
 import { PluginService } from '../services/PluginService';
